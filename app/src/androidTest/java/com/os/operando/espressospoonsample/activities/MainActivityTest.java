@@ -22,9 +22,9 @@ public class MainActivityTest {
     public ActivityTestRule<MainActivity> mActivityRule = new ActivityTestRule<>(MainActivity.class);
 
     @Test
-    public void test() {
-        Spoon.screenshot(mActivityRule.getActivity(), "test");
+    public void main() {
+        Spoon.screenshot(mActivityRule.getActivity(), "main_screenshot1");
         onView(withId(R.id.button)).perform(click());
-        Spoon.screenshot(mActivityRule.getActivity(), "test2");
+        Spoon.screenshot(mActivityRule.getActivity(), "main_screenshot2");
     }
 }
