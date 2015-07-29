@@ -2,6 +2,7 @@ package com.os.operando.espressospoonsample.activities;
 
 import android.support.test.rule.ActivityTestRule;
 import android.support.test.runner.AndroidJUnit4;
+import android.test.suitebuilder.annotation.LargeTest;
 
 import com.os.operando.espressospoonsample.R;
 import com.squareup.spoon.Spoon;
@@ -16,6 +17,7 @@ import static android.support.test.espresso.action.ViewActions.typeText;
 import static android.support.test.espresso.matcher.ViewMatchers.withId;
 
 @RunWith(AndroidJUnit4.class)
+@LargeTest
 public class LoginActivityTest {
 
     @Rule
