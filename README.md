@@ -29,3 +29,17 @@ Only Large Test
 ```gradle
 gradle spoonDebugAndroidTestLarge
 ```
+
+Generated reports are available at build/spoon/${TEST_VARIANT} folder.
+
+
+## Output
+
+**Top Page**
+
+![top](/art/spoon_index_top.png)
+
+**Device Page**
+
+![device](/art/spoon_index_device.png)
+
