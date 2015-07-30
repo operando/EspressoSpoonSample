@@ -14,3 +14,18 @@ Espresso + Spoon Sample
 [EspressoSetupInstructions](https://code.google.com/p/android-test-kit/wiki/EspressoSetupInstructions)
 
 [Testing UI for a Single App](https://developer.android.com/training/testing/ui-testing/espresso-testing.html)
+
+
+## Usage
+
+All Test
+
+```gradle
+gradle spoon
+```
+
+Only Large Test
+
+```gradle
+gradle spoonDebugAndroidTestLarge
+```
