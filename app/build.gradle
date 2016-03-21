@@ -54,4 +54,5 @@ dependencies {
 
 spoon {
     debug = true
+    adbTimeout 60
 }
