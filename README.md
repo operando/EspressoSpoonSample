@@ -33,6 +33,13 @@ gradle spoonDebugAndroidTestLarge
 Generated reports are available at build/spoon/${TEST_VARIANT} folder.
 
 
+## Android M Permission
+
+Storage permission ON.
+
+![storage](/art/android_m_permission_storage.png)
+
+
 ## Output
 
 **Top Page**
