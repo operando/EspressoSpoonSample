@@ -26,17 +26,17 @@ public class LoginActivityTest {
 
     @Test
     public void login_noLogin() {
-        onView(withId(R.id.email)).perform(click(), typeText("aaaa@aaa.com"), closeSoftKeyboard());
-        onView(withId(R.id.pass)).perform(closeSoftKeyboard(), click(), typeText("aaaa"), closeSoftKeyboard());
-        onView(withId(R.id.login_button)).perform(closeSoftKeyboard(), click());
+        onView(withId(R.id.email)).perform(typeText("aaaa@aaa.com"), closeSoftKeyboard());
+        onView(withId(R.id.pass)).perform(typeText("aaaa"), closeSoftKeyboard());
+        onView(withId(R.id.login_button)).perform(click());
         Spoon.screenshot(mActivityRule.getActivity(), "test2");
     }
 
     @Test
     public void login_Login() {
-        onView(withId(R.id.email)).perform(click(), typeText("test@test.com"), closeSoftKeyboard());
-        onView(withId(R.id.pass)).perform(closeSoftKeyboard(), click(), typeText("test"), closeSoftKeyboard());
-        onView(withId(R.id.login_button)).perform(closeSoftKeyboard(), click());
+        onView(withId(R.id.email)).perform(typeText("test@test.com"), closeSoftKeyboard());
+        onView(withId(R.id.pass)).perform(typeText("test"), closeSoftKeyboard());
+        onView(withId(R.id.login_button)).perform(click());
         Spoon.screenshot(mActivityRule.getActivity(), "test2");
     }
 }
